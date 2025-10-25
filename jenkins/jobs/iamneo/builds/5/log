@@ -1,0 +1,23 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/iamneo
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/coder/project/workspace/jenkins/workspace/iamneo/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SuchithaBolar/Jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/SuchithaBolar/Jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/SuchithaBolar/Jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9fbb0817a76bbc6a8162735ebe0b90d5495bf21c (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9fbb0817a76bbc6a8162735ebe0b90d5495bf21c # timeout=10
+Commit message: "message"
+ > git rev-list --no-walk 9fbb0817a76bbc6a8162735ebe0b90d5495bf21c # timeout=10
+[iamneo] $ /bin/sh -xe /tmp/jenkins11019033235112929016.sh
++ python3 project/suchitha.py
+python3: can't open file '/home/coder/project/workspace/jenkins/workspace/iamneo/project/suchitha.py': [Errno 2] No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
